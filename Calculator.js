@@ -16,7 +16,6 @@ function Calculator(a, b) {
     this.result = +a / +b;
   };
   this.display = (action) => {
-    this[action]();
     document.querySelector("h1").innerHTML = `Result: ${this.result}`;
   };
 }
@@ -26,5 +25,6 @@ function calculate(action) {
   const B = document.getElementById("inputB").value;
 
   const calculator = new Calculator(A, B);
+  calculator[action]();
   calculator.display(action);
 }
