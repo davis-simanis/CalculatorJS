@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- "" = stops loading HTML, loads .js, executes.js, keeps loading HTML, 
+			"async" = loads html with .js, when .js loaded, executes it, then keeps loading html, 
+			"defer" = loads all html with .js, then executes it.-->
+    <script src="Calculator.js" defer></script>
+  </head>
+  <body>
+    <label for="inputA">A: </label>
+    <input type="text" id="inputA" />
+    <label for="inputB">B: </label>
+    <input type="text" id="inputB" />
+    <br /><br />
+    <button id="add" onclick="calculate(this.id)">ADD</button>
+    <button id="sub" onclick="calculate(this.id)">SUB</button>
+    <button id="mul" onclick="calculate(this.id)">MUL</button>
+    <button id="div" onclick="calculate(this.id)">DIV</button>
+    <h1></h1>
+  </body>
+</html>
